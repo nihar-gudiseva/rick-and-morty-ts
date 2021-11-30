@@ -30,6 +30,7 @@ function CharacterList() {
             <SearchBar type="text" placeholder="Search" onChange={(event) => {
                 setSearch(event.target.value);
             }}></SearchBar>
+            <StyledText>x results</StyledText>
             <div>{characters.filter((value: Character) =>{
                 if(search===""){
                     return value;

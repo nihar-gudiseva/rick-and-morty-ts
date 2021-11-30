@@ -4,7 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-In the project directory, you can run:
+### `npm install`
+
+Installs all the necessary dependencies. Do this first.
 
 ### `npm start`
 
@@ -39,8 +41,28 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Known Bugs/Issues (Things I would fix if I were to continue)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Backend
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- "Previous" and "Next" buttons not implemented
+- Pagination not implemented
+  - Only first 20 requests come in
+  - "Page 1 of X" is a placeholder
+- Search Bar data does not persist (query not pre-filled)
+- Fix "any" typing on CharacterList
+- Make the CharacterDetails interface its own file
+- Pass the character boxes in CharacterInfo to CharacterBox (need to fix typing first)
+- Link to individual character doesn't work on CharacterInfo
+  - When you hover over it, it gives the right link, but doesn't actually take you to the page if you click on it. The URL changes, however, so if you go to the URL and simply hit enter, it'll work.
+- Need to implement how many results returned from filtering
+  - "x results" is a placeholder
+- Fix key/value warnings
+- Fix other miscellaneous warnings
+
+### Design
+
+- Links exist outside of the box
+- Design isn't centered (go to index.css and use text-align: center and go from there)
+- Need icon on search bar
+- Need to fix up font and text styles
